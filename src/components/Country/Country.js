@@ -1,8 +1,10 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import './Country.css';
 
 const Country = (props) => {
+    //destructuring
     const { name, img, price } = props.country;
     return (
         <div>
@@ -18,6 +20,7 @@ const Country = (props) => {
                                 of that country.
                             </Card.Text>
                             <button
+                                className="course-btn"
                                 onClick={() =>
                                     props.handleAddCourse(props.country)
                                 }

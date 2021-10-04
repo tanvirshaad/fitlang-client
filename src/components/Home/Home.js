@@ -1,29 +1,32 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Card, CardImg, Col, Container, Image, Row } from 'react-bootstrap';
+import { Card, CardImg, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => {
     return (
-        <div>
+        <div className="mb-5">
             <div className="bg-img">
-                <Container>
-                    <Row>
-                        <Col lg={6}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6">
                             <h1 className="text-white mb-2 large-text">
                                 Language for life
                             </h1>
                             <p className="text-white my-4 fs-4">
                                 Speak a language in 10 minutes a day
                             </p>
-                            <button className="btn-regular mt-2">
-                                Get Started For Free
-                            </button>
-                        </Col>
-                    </Row>
-                </Container>
+                            <Link to="/services">
+                                <button className="btn-regular mt-2">
+                                    Get Started For Free
+                                </button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            {/* why fitlang  */}
             <Container>
                 <div className="">
                     <Row mt={5} className="text-center">

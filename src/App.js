@@ -6,6 +6,8 @@ import Home from './components/Home/Home';
 import Services from './components/Services/Services';
 import Inventory from './components/Inventory/Inventory';
 import About from './components/About/About';
+import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/Footer';
 
 function App() {
     return (
@@ -13,6 +15,9 @@ function App() {
             <Router>
                 <Header></Header>
                 <Switch>
+                    <Route exact path="/">
+                        <Home></Home>
+                    </Route>
                     <Route exact path="/home">
                         <Home></Home>
                     </Route>
@@ -25,7 +30,11 @@ function App() {
                     <Route path="/about">
                         <About></About>
                     </Route>
+                    <Route path="*">
+                        <NotFound></NotFound>
+                    </Route>
                 </Switch>
+                <Footer></Footer>
             </Router>
         </div>
     );

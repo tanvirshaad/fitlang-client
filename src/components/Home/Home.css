@@ -2,13 +2,14 @@
     background-image: url(../../images/HIW_Hero_Background_V2-1.png);
     background-size: cover;
     background-position: center;
-    padding: 100px 0px 400px;
+    padding: 100px 0px 300px;
     overflow-x: hidden;
 }
 .large-text {
-    font-size: 72px;
+    font-size: 52px;
     line-height: 62px;
     font-weight: bold;
+    padding: 0px !important;
 }
 .btn-regular {
     padding: 10px 25px;
@@ -22,4 +23,5 @@
 .feauterd-text {
     color: springgreen;
     font-weight: bold;
+    padding: 0 !important;
 }

@@ -15,9 +15,12 @@ const Services = () => {
         const newCart = [...cart, course];
         setCart(newCart);
     };
+
     return (
         <div>
-            <h2 className="text-center mb-5">Our Services</h2>
+            <h2 className="text-center my-5">
+                Our <span className="feauterd-text">Services</span>
+            </h2>
             <div className="d-flex">
                 <div className="grid-layout">
                     {countries.map((country) => (

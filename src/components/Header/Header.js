@@ -8,7 +8,13 @@ const Header = () => {
         <div>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand to="/home">Navbar</Navbar.Brand>
+                    <Navbar.Brand
+                        to="/home"
+                        className="fw-bold fs-3"
+                        style={{ color: 'springgreen' }}
+                    >
+                        Fitlang
+                    </Navbar.Brand>
                     <Nav className="ms-auto">
                         <NavLink className="mx-2" to="/home">
                             Home
