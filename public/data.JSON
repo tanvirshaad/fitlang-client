@@ -1,0 +1,10 @@
+[
+    {"name":"Bengali","id":1,"img":"https://www.worldometers.info/img/flags/small/tn_bg-flag.gif", "price": 30},
+    {"name":"English","id":2,"img":"https://www.worldometers.info/img/flags/small/tn_uk-flag.gif", "price": 40},
+    {"name":"German","id":3,"img":"https://www.worldometers.info/img/flags/small/tn_gm-flag.gif", "price": 50},
+    {"name":"Spanish","id":4,"img":"https://www.worldometers.info/img/flags/small/tn_sp-flag.gif", "price": 50},
+    {"name":"French","id":5,"img":"https://www.worldometers.info/img/flags/small/tn_fr-flag.gif", "price": 40},
+    {"name":"Arabic","id":6,"img":"https://www.worldometers.info/img/flags/small/tn_sa-flag.gif", "price": 50},
+    {"name":"Indian","id":7,"img":"https://www.worldometers.info/img/flags/small/tn_in-flag.gif", "price": 30},
+    {"name":"Russian","id":8,"img":"https://www.worldometers.info/img/flags/small/tn_rs-flag.gif", "price": 40}
+]

@@ -1,9 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
+import Country from '../Country/Country';
+import './Services.css';
 
 const Services = () => {
+    const [countries, setCountries] = useState([]);
+    const [cart, setCart] = useState([]);
+    useEffect(() => {
+        fetch('./data.JSON')
+            .then((res) => res.json())
+            .then((data) => setCountries(data));
+    }, []);
+    const handleAddCourse = (course) => {
+        const newCart = [...cart, course];
+        setCart(newCart);
+    };
     return (
         <div>
-            <h2>This is service</h2>
+            <h2 className="text-center mb-5">Our Services</h2>
+            <div className="d-flex">
+                <div className="grid-layout">
+                    {countries.map((country) => (
+                        <Country
+                            handleAddCourse={handleAddCourse}
+                            key={country.id}
+                            country={country}
+                        ></Country>
+                    ))}
+                </div>
+
+                <div className="cart-container col-lg-3 text-center">
+                    <Cart cart={cart}></Cart>
+                </div>
+            </div>
         </div>
     );
 };

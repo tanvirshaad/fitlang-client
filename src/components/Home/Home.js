@@ -174,7 +174,7 @@ const Home = () => {
                                     />
                                     <Card.Body className="text-center">
                                         <Button className="btn-regular">
-                                            Learn English
+                                            Learn Bengali
                                         </Button>
                                     </Card.Body>
                                 </Card>
