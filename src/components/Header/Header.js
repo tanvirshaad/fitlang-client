@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
@@ -16,16 +16,44 @@ const Header = () => {
                         Fitlang
                     </Navbar.Brand>
                     <Nav className="ms-auto">
-                        <NavLink className="mx-2" to="/home">
+                        <NavLink
+                            activeClassName="selected"
+                            activeStyle={{
+                                fontWeight: 'bold',
+                            }}
+                            className="mx-2"
+                            to="/home"
+                        >
                             Home
                         </NavLink>
-                        <NavLink className="mx-2" to="/services">
+                        <NavLink
+                            activeClassName="selected"
+                            activeStyle={{
+                                fontWeight: 'bold',
+                            }}
+                            className="mx-2"
+                            to="/services"
+                        >
                             Services
                         </NavLink>
-                        <NavLink className="mx-2" to="/about">
+                        <NavLink
+                            activeClassName="selected"
+                            activeStyle={{
+                                fontWeight: 'bold',
+                            }}
+                            className="mx-2"
+                            to="/about"
+                        >
                             About
                         </NavLink>
-                        <NavLink className="mx-2" to="/reviews">
+                        <NavLink
+                            activeClassName="selected"
+                            activeStyle={{
+                                fontWeight: 'bold',
+                            }}
+                            className="mx-2"
+                            to="/reviews"
+                        >
                             Reviews
                         </NavLink>
                     </Nav>

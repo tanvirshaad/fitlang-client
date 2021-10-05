@@ -13,8 +13,8 @@ const Home = () => {
     return (
         <div className="mb-5">
             <div className="bg-img">
-                <div className="container">
-                    <div className="row">
+                <Container>
+                    <Row>
                         <div className="col-lg-6">
                             <h1 className="text-white mt-5 mb-2 large-text">
                                 Language for life
@@ -31,8 +31,8 @@ const Home = () => {
                                 </button>
                             </Link>
                         </div>
-                    </div>
-                </div>
+                    </Row>
+                </Container>
             </div>
             {/* why fitlang  */}
             <Container>
@@ -71,7 +71,7 @@ const Home = () => {
                         </Col>
                     </Row>
                 </div>
-
+                {/* features  */}
                 <div className="mt-5">
                     <Row mt={5} className="text-center">
                         <h2 className="text-center my-5 fs-1">
@@ -115,7 +115,7 @@ const Home = () => {
                         </Col>
                     </Row>
                 </div>
-
+                {/* services  */}
                 <div className="mt-5">
                     <Row>
                         <h1 className="fs-1 text-center mb-5">

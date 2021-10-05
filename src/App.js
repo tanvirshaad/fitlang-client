@@ -12,6 +12,7 @@ import Reviews from './components/Reviews/Reviews';
 function App() {
     return (
         <div>
+            {/* Routing  */}
             <Router>
                 <Header></Header>
                 <Switch>

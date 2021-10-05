@@ -2,10 +2,11 @@ import React from 'react';
 import './Review.css';
 
 const Review = (props) => {
+    //destructuring
     const { name, img, message } = props.review;
     return (
         <div>
-            <div className="card m-3" style={{ width: '18rem' }}>
+            <div className="card m-3" style={{ width: '25rem' }}>
                 <img
                     src={img}
                     className="card-img-top img-thumbanil img-fluid rounded-circle fixed-height"

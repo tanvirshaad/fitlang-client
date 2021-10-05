@@ -6,12 +6,12 @@ const About = () => {
     return (
         <div className="pb-5">
             <Container>
-                <Row className="">
+                <Row className="mt-5">
                     <Col lg={12}>
                         <h1 className="fs-1 fw-bold text-center">
                             Meet Our <span className="coloured-text">Team</span>
                         </h1>
-                        <Row>
+                        <Row className="mt-5">
                             <Col md={4}>
                                 <Card style={{ width: '18rem' }}>
                                     <Card.Img

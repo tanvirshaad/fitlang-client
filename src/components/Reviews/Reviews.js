@@ -4,7 +4,9 @@ import Review from '../Review/Review';
 import './Reviews.css';
 
 const Reviews = () => {
+    //using state
     const [reviews, setReviews] = useState([]);
+    // fetching data
     useEffect(() => {
         fetch('./success.JSON')
             .then((res) => res.json())
@@ -21,9 +23,10 @@ const Reviews = () => {
                         </h1>
                     </Col>
                 </Row>
+                {/* review  */}
                 <Row className="mt-5">
                     {reviews.map((review) => (
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 d-flex justify-content-center">
                             <Review key={review.id} review={review}></Review>
                         </div>
                     ))}
