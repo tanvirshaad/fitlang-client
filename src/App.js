@@ -8,6 +8,7 @@ import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import Reviews from './components/Reviews/Reviews';
+import Inventory from './components/Inventory/Inventory';
 
 function App() {
     return (
@@ -30,6 +31,9 @@ function App() {
                     </Route>
                     <Route path="/about">
                         <About></About>
+                    </Route>
+                    <Route path="/inventory">
+                        <Inventory></Inventory>
                     </Route>
                     <Route path="*">
                         <NotFound></NotFound>

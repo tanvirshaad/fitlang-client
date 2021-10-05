@@ -18,7 +18,7 @@ const Cart = (props) => {
     return (
         <div className="cart">
             <h2>Cart</h2>
-            <h4>Courese Added: {cart.length}</h4>
+            <h4>Course Added: {cart.length}</h4>
             <h5>Total: ${total}</h5>
             <button className="btn-regular" onClick={handlePlaceOrder}>
                 Place Order
