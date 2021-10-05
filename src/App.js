@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Services from './components/Services/Services';
-import Inventory from './components/Inventory/Inventory';
 import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import Reviews from './components/Reviews/Reviews';
 
 function App() {
     return (
@@ -24,8 +24,8 @@ function App() {
                     <Route path="/services">
                         <Services></Services>
                     </Route>
-                    <Route path="/inventory">
-                        <Inventory></Inventory>
+                    <Route path="/reviews">
+                        <Reviews></Reviews>
                     </Route>
                     <Route path="/about">
                         <About></About>

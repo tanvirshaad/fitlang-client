@@ -1,0 +1,12 @@
+.fixed-height {
+    height: 100px;
+    width: 100px;
+}
+.card {
+    padding: 20px 20px;
+    border: 3px solid springgreen;
+}
+.card-body {
+    padding: 0;
+    margin-top: 10px;
+}
