@@ -1,10 +1,9 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 import './Inventory.css';
 
 const Inventory = () => {
     return (
-        <div>
+        <div className="py-5">
             <h1 className="text-center mt-5 fs-1 fw-bold">
                 THANK YOU FOR CHOOSING{' '}
                 <span className="featured-text">FITLANG</span>

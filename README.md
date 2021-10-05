@@ -1,3 +1,5 @@
+Visit https://gracious-lichterman-fa413f.netlify.app/
+
 # Welcome to Fitlang
 
 Fitlang is a language learning website.

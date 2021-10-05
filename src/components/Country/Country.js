@@ -1,6 +1,5 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container } from 'react-bootstrap';
 import './Country.css';
 
 const Country = (props) => {
@@ -10,7 +9,14 @@ const Country = (props) => {
         <div>
             <Container>
                 <Col>
-                    <Card style={{ width: '18rem' }}>
+                    <Card
+                        style={{
+                            width: '18rem',
+                            padding: '10px',
+                            borderRadius: '10px',
+                            border: '2px solid springgreen',
+                        }}
+                    >
                         <Card.Img variant="top" src={img} />
                         <Card.Body>
                             <Card.Title>Learn {name}</Card.Title>

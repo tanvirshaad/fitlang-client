@@ -2,24 +2,32 @@ import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, CardImg, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router';
 import './Home.css';
 
 const Home = () => {
+    const history = useHistory();
+    const handleRoute = () => {
+        history.push('/services');
+    };
     return (
         <div className="mb-5">
             <div className="bg-img">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <h1 className="text-white mb-2 large-text">
+                            <h1 className="text-white mt-5 mb-2 large-text">
                                 Language for life
                             </h1>
                             <p className="text-white my-4 fs-4">
                                 Speak a language in 10 minutes a day
                             </p>
                             <Link to="/services">
-                                <button className="btn-regular mt-2">
-                                    Get Started For Free
+                                <button
+                                    onClick={handleRoute}
+                                    className="btn-regular mt-2"
+                                >
+                                    Get Started
                                 </button>
                             </Link>
                         </div>
@@ -135,10 +143,17 @@ const Home = () => {
                                     <li>In 12 months with 1 class per week</li>
                                 </ul>
                             </p>
+                            <button
+                                onClick={handleRoute}
+                                className="btn-regular"
+                            >
+                                View All Courses
+                            </button>
                         </Col>
                         <Col lg={6} className="d-flex">
                             <Col sm={6}>
                                 <Card
+                                    className="h-20"
                                     style={{
                                         width: '15rem',
                                         border: '2px solid springgreen',
@@ -154,17 +169,20 @@ const Home = () => {
                                         thumbnail
                                     />
                                     <Card.Body className="text-center">
-                                        <Button className="btn-regular">
+                                        <Button
+                                            onClick={handleRoute}
+                                            className="btn-regular"
+                                        >
                                             Learn English
                                         </Button>
                                     </Card.Body>
                                 </Card>
                                 <Card
+                                    className="h-20 mt-2"
                                     style={{
                                         width: '15rem',
                                         border: '2px solid springgreen',
                                     }}
-                                    className="mt-2"
                                 >
                                     <CardImg
                                         style={{
@@ -176,7 +194,10 @@ const Home = () => {
                                         thumbnail
                                     />
                                     <Card.Body className="text-center">
-                                        <Button className="btn-regular">
+                                        <Button
+                                            onClick={handleRoute}
+                                            className="btn-regular"
+                                        >
                                             Learn Bengali
                                         </Button>
                                     </Card.Body>
@@ -184,6 +205,7 @@ const Home = () => {
                             </Col>
                             <Col sm={6}>
                                 <Card
+                                    className="h-20"
                                     style={{
                                         width: '15rem',
                                         border: '2px solid springgreen',
@@ -199,17 +221,20 @@ const Home = () => {
                                         thumbnail
                                     />
                                     <Card.Body className="text-center">
-                                        <Button className="btn-regular">
+                                        <Button
+                                            onClick={handleRoute}
+                                            className="btn-regular"
+                                        >
                                             Learn Spanish
                                         </Button>
                                     </Card.Body>
                                 </Card>
                                 <Card
+                                    className="h-20 mt-2"
                                     style={{
                                         width: '15rem',
                                         border: '2px solid springgreen',
                                     }}
-                                    className="mt-2"
                                 >
                                     <CardImg
                                         style={{
@@ -221,7 +246,10 @@ const Home = () => {
                                         thumbnail
                                     />
                                     <Card.Body className="text-center">
-                                        <Button className="btn-regular">
+                                        <Button
+                                            onClick={handleRoute}
+                                            className="btn-regular"
+                                        >
                                             Learn English
                                         </Button>
                                     </Card.Body>

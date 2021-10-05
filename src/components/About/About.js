@@ -1,18 +1,17 @@
-import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import './About.css';
 
 const About = () => {
     return (
-        <div>
+        <div className="pb-5">
             <Container>
-                <Row className="mt-5">
+                <Row className="">
                     <Col lg={12}>
                         <h1 className="fs-1 fw-bold text-center">
                             Meet Our <span className="coloured-text">Team</span>
                         </h1>
-                        <Row className="mt-5">
+                        <Row>
                             <Col md={4}>
                                 <Card style={{ width: '18rem' }}>
                                     <Card.Img
